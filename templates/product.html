@@ -1,0 +1,72 @@
+{% extends "commonadmin.html" %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div style="background-color:#D3D3D3; margin-top:50px; margin-left:100px; margin-right:100px;">
+        <h2 style="margin-top:40px">{{msg}}</h2>
+        <form action="/product" method="post" enctype="multipart/form-data" style="padding:50px;">
+           <center><table >
+                <tr>
+                    <th>
+                        <label>Product Type:</label>
+                    </th>
+                    <td>
+                        <select name="ptype" >
+                            <option value="Shirt">Shirt</option>
+                            <option value="Pant">Pant</option>
+                            <option value="Saree">Saree</option>
+                            <option value="Kurthis">Kurthis</option>
+                            <option value="Blazer">Blazer</option>
+                            <option value="Scart">Scart</option>
+                        </select><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label>Product Name:</label></th>
+                    <td>
+                        <input type="text" name="pname" placeholder="product type" ><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label>Product Quantity:</label></th>
+                    <td>
+                        <input type="text" name="pqty" placeholder="product quantity"
+                               ><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label>Product Price:</label></th>
+                    <td>
+                        <input type="text" name="pprice" placeholder="product price" ><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label>Product Image:</label>
+                    </th>
+                    <td><input type="file" name="pfile" ><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        <input type="submit" value="Add Product">
+                    </th>
+            </table>
+           </center>
+        </form>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
+{% endblock %}
+

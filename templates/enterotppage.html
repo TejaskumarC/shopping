@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>otp</title>
+    <link rel="stylesheet" href="/static/css/style8.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+<form id="contact" action="/checkotp" method="post" padding="20px">
+   <div> <h3 align="center">OTP Page</h3>
+         <div class="card" style="align-items:center; background-color:#D3D3D3;padding:80px;">
+
+            <input placeholder="Your Email Id" type="text" tabindex="1" required style="width:200px; height:30px;"
+                  maxlength="50px" size="20px"
+            name="email" id="email" value="{{email}}"  required/><br>
+
+            <input placeholder="OTP" type="text" tabindex="1" required style="width:200px; height:30px;"
+                   maxlength="4" size="20px"
+            name="otp" id="otp"/><br><br>
+
+
+
+
+
+    <input type="submit" value="Check OTP" style="padding:15px;"><br>
+</div>
+   </div>
+</form>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

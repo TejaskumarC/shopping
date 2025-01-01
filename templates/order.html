@@ -1,0 +1,103 @@
+{% extends "commonuser.html" %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+
+        function CalcTotal()
+        {
+            var qty = parseInt(document.getElementById('pqty').value);
+            var rqty = parseInt(document.getElementById('reqty').value);
+            var price = parseInt(document.getElementById('pprice').value);
+
+            if(rqty>qty)
+            {
+                alert("Req Qty > Available Qty");
+                document.getElementById('total').value="";
+            }
+            else
+            {
+                document.getElementById('total').value = rqty * price;
+            }
+        }
+    </script>
+
+</head>
+<body style=" background-color:white;">
+
+<div class="card">
+{{msg}}
+    <center>
+<form action="/userorder" method="post" onsubmit="return order()" style="margin-top:100px;text-align:center;">
+    <table style="margin-left:500px">
+        <tr>
+            <th>
+        <label>Product id:</label>
+                </th>
+                    <td>
+    <input type="text" name="pid"  value="{{data[0]}}" required readonly><br><br>
+                </td>
+                </tr>
+        <tr>
+                    <th>
+       <label>Product Type:</label>
+                         <td>
+    <input type="text" name="ptype"  value="{{data[1]}}" required readonly><br><br>
+                       </td>
+                </tr>
+        <tr>
+                    <th>
+       <label>Product Name:</label>
+                         <td>
+    <input type="text" name="pname" value="{{data[2]}}"  required readonly><br><br>
+                       </td>
+                </tr>
+        <tr>
+                    <th>
+       <label>Product Quantity:</label>
+                         <td>
+    <input type="number" id="pqty" name="pqty" value="{{data[3]}}"  required readonly><br><br>
+                        </td>
+                </tr>
+        <tr>
+                    <th>
+       <label>Product Price:</label>
+                         <td>
+    <input type="text" name="pprice" id="pprice" value="{{data[4]}}"  required readonly><br><br>
+                      </td>
+                </tr>
+        <tr>
+                    <th>
+       <label>Product Image:</label><br>
+                         <td>
+    <img src="static/img/{{data[5]}}" width="200px" height="200px">
+    <input type="hidden" name="filename" value="{{data[5]}}">
+    <br>
+                       </td>
+                </tr>
+        <tr>
+                    <th>
+       <label>Product require Quantity:</label>
+                         <td>
+     <input type="text" name="reqty" id="reqty"  placeholder="require quantity" required
+     onkeydown="CalcTotal()"><br><br>
+                        </td>
+                </tr>
+        <tr>
+                    <th>
+       <label>Total:</label>
+                         <td>
+    <input type="text"  id="total" name="total" placeholder="Total cost" required readonly><br><br>
+    <input type="submit" value="Order">
+        </td>
+                </tr>
+        </table>
+</form>
+    </center>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
+{% endblock %}

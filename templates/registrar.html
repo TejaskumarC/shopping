@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign in</title>
+        <link rel="stylesheet" type="text/css" href="/static/css/style2.css">
+        <script type="text/javascript" src="/static/js/script.js"></script>
+    </head>
+    <body>
+        <form  action="/registrar" method="post" target="#" onsubmit="return validate()">
+
+        <center><h1>Sign up</h1></center>
+        <br>
+      	<center><input type="text" name="name" id="name" placeholder="Name"   required><br>
+       <br>
+	<input type="text" name="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"><br>
+       <br>
+      	<input type="text" name="telephone" placeholder="Phnumber" required><br>
+       <br>
+	<input type="password" name="password" placeholder="Password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br>
+        <br>
+	<input type="text" name="address" placeholder="Address" required><br>
+        <br>
+        <label>
+          <input type="checkbox" name="terms">By signing up to you agree to your
+           <a href="#service">Terms of Service</a> and <a href="#policy">Privacy Policy</a>
+        </label>
+
+      	<div class="button"><br>
+        </center>
+            <center><input type="submit" class="button" value="Sign up" style="background-color: aqua;width: 100px; "/><a href="/login" style="margin-left:50px;">Login</a>
+    </div>
+
+	</form>
+</body>
+</html>

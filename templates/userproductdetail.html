@@ -1,0 +1,36 @@
+{% extends "commonuser.html" %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1px solid black" cellpadding="6px" cellspacing="0px" align="center" style="margin-top:60px">
+    <tr>
+        <th>Product Id</th>
+        <th>Product Type</th>
+        <th>Product Name</th>
+        <th>Product Quantity</th>
+        <th>Product Price</th>
+        <th>Product File</th>
+        <th>Order</th>
+
+    </tr>
+    {% for x in data %}
+    <tr>
+        <td>{{x[0]}}</td>
+         <td>{{x[1]}}</td>
+         <td>{{x[2]}}</td>
+         <td>{{x[3]}}</td>
+         <td>{{x[4]}}</td>
+         <td><img src="static/img/{{x[5]}}" height="200px"></td>
+        <td><a href="/order?id={{x[0]}}" style="padding:10px;text-decoration:none;color:red">Order</a> </td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+</body>
+</html>
+{% endblock %}

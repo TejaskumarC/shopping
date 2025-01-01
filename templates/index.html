@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shoping website</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="/static/css/style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/stylre5.css">
+    <style>
+      body{
+        background-color: white;
+      }
+      .dark-mode{
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+      <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">SHOP MALL</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#product">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/team">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/login">Login</a>
+        </li>
+      </ul>
+      <button onclick="myFunction()" class="btn btn-outline-success p-2 my-lg-0 my-2" >dark mode</button>
+    </div>
+  </div>
+</nav>
+</nav>
+  <body>
+  <main>
+    <div class="popup" id="popup">
+      <div class="popup-content">
+          <span class="close" id="close">&times;</span>
+          <a href="#product"><img src="/static/img/ad2.png" alt="Popup Image" style="width: 450px; height: 350px;"></a>
+      </div>
+  </div>
+<div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/static/img/sh8.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Starting at ₹ 99</h2>
+          <p>Come Fast and Grab Your Dream Clothes.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/img/ca1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Starting at ₹ 199</h2>
+          <p>Choose what u want.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/static/img/ca2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>Starting at ₹ 249</h2>
+          <p>All is at in ur Hand.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+  </main>
+<br>
+<section id="about">
+  <div class="container-fluid">
+    <div class="row">
+      <h1 style="font-weight: bold;" align="center">ABOUT US</h1>
+        <div class="col-lg-6 col-md-6 col-12 my-5">
+              <img src="/static/img/ab.jpg" class="img-fluid mt-5" width="600px" height="600px">
+        </div>
+        <div class="col-lg-6 col-md-4 col-12 p-lg-5 p-2 my-5">
+          <h1>The shopping Mall Group</h1>
+            <p style="text-align: justify;">The shopping Mall Group is one of India's leading digital commerce entities and includes group companies Flipkart, Myntra, Flipkart Wholesale, Flipkart Health+, Cleartrip and ANS Commerce.</p>
+            <p style="text-align: justify;">Started in 2024, Shop Mall has enabled millions of sellers, merchants, and small businesses to participate in India's digital commerce revolution. With a registered customer base of more than 50 million,Shop Mall's  marketplace offers over 15 million products across 80+ categories. Today, there are over 1 lakh sellers on the platform, including Shopsy sellers. With a focus on empowering and delighting every Indian by delivering value through technology and innovation,Shop Mall is known for pioneering services such as Cash on Delivery, No Cost EMI and easy returns, which are customer-centric innovations that have made online shopping more accessible and affordable for millions of Indians.</p>
+
+            <a href="/team"><button class="btn btn-outline-dark text-white bg-dark p-2 my-lg-0 my-2" >Know more</button></a>
+        </div>
+    </div>
+</div>
+</section>
+<section id="product">
+  <div class="container m-5">
+    <h1 class="text-center my-5" style="font-weight: bold;">OUR PRODUCTS</h1>
+    <center><div class="row">
+        <div class="col-lg-4 col-md-4 col-12">
+            <div class="card">
+                <a href="/login"><img src="/static/img/B1.jpg" class="card-img-top"></a>
+                <div class="card-body text-center">
+                  <h5 class="card-title">T-shirts</h5>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+            <div class="card">
+                <a href="/login"><img src="/static/img/B2.jpg" class="card-img-top"></a>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Blazers</h5>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+            <div class="card">
+                <a href="/login"><img src="/static/img/B8.jpg" class="card-img-top"></a>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Dhotis Kurthas</h5>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-12">
+            <div class="card">
+                <a href="/login"><img src="/static/img/D1.jpg" class="card-img-top"></a>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Middi Dresses</h5>
+                </div>
+              </div>
+        </div>
+
+<div class="col-lg-4 col-md-4 col-12">
+<div class="card">
+    <a href="/login"><img src="/static/img/D3.jpg" class="card-img-top"></a>
+<div class="card-body text-center">
+<h5 class="card-title">Western Dresses</h5>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-4 col-12">
+<div class="card">
+    <a href="/login"><img src="/static/img/D5.jpg" class="card-img-top"></a>
+<div class="card-body text-center">
+  <h5 class="card-title">Patola Silks</h5>
+</div>
+</div>
+</div>
+</div>
+
+<div class="row">
+        <div class="col-lg-4 col-md-4 col-12">
+            <div class="card">
+                <a href="/login"><img src="/static/img/C1.jpg" class="card-img-top"></a>
+                <div class="card-body text-center">
+                  <h5 class="card-title"> Girl Child T-shirts</h5>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+            <div class="card">
+                <a href="/login"><img src="/static/img/C3.jpg" class="card-img-top"></a>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Pyjama with caots</h5>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+            <div class="card">
+                <a href="/login"><img src="/static/img/C5.jpg" class="card-img-top"></a>
+                <div class="card-body text-center">
+                  <h5 class="card-title">Kurtha Pyjamas</h5>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div>
+    </div></center>
+  </div></section>
+<section id="services">
+  <h1 style="text-align: center; margin-bottom: 2px; font-weight: bold;">Services</h1>
+<div class="container">
+    <div class="row">
+      <div class="col">
+<img src="/static/img/F5.jpeg" alt="" width="200px" height="200px">
+<P>Get fast delivey to your door step</P>
+      </div>
+      <div class="col">
+        <img src="/static/img/F2.jpg" alt="" width="350px"  height="300px">
+        <p style="text-align: center;">Get upto instant credits when product received</p>
+      </div>
+      <div class="col" style="margin-left: 20px;">
+        <img src="/static/img/F3.png" alt="" width="350px"  height="300px">
+        <p>Best margin to save more</p>
+      </div>
+      <div class="col">
+        <img src="/static/img/B11.jpg" alt="" width="350px"  height="300px">
+        <p>Pay money when order is placed</p>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+<section id="youtube">
+    <div class="row">
+      <div class="col" style="margin-left: 7rem;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/NsQxJT2OG4k?si=A-58FUPDZuHYA7KH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="col">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YCIuEU2y8XI?si=i9fsdAW3wYTJ9qAx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+    </section>
+  <section id="contact" style="margin-bottom: 30px;">
+  <div>
+ <center><h1 style="margin-top: 2rem;font-weight: bold;">Contact Us</h1>
+  <p style="font-weight: bold;">Let's get in touch!</p></center>
+  <div class="row">
+    <div class="col" style="margin-left: 27px;">
+        {{msg}}
+  <br><br><form  action="/message" method="post">
+    <label for="name" style="margin-left:40px;">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="email" style="margin-left:40px;">Email:</label>
+    <input type="email" id="email" name="email" required style="margin-left:05px;"><br><br>
+    <label for="message" style="margin-left:40px; margin-down:10px;">Message:</label>
+    <textarea id="message" name="message" required></textarea><br><br>
+    <input type="submit" value="Send Message" style="margin-left:120px; background-color:#12AD2B;"><br>
+  </form>
+    </div>
+<div class="col" style="margin-top: 27px; margin-left: 27px;">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15551.716958524683!2d77.55046664999999!3d12.9763776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3dfb20fc066d%3A0x80ae45326f913fe2!2sGT%20World%20Mall!5e0!3m2!1sen!2sin!4v1708495952615!5m2!1sen!2sin" width="550" height="265" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  </div>
+  </div>
+</section>
+<section id="accordian">
+<div class="container-fluid" style="background-color: black;">
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        How can i Place an order?
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">To place an order,Simply browse our website,Select the desired items and add them to the shopping cart.Add proceed to checkout,provode the necessary information,and Complete the payment process.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        How long does shipping take?
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">It takes 3-5 Business days to deliver your order.</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Can i track my order?
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Yes,Of course you can track your order.</div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<footer>
+  <div class="footer-top" style="margin-top: 20px;">
+    <div class="container-fluid text-light bg-dark">
+      <div class="row">
+        <div class="col-md-3">
+          <h5 style="font-weight: bold;">Navigation</h5>
+          <ul>
+            <li><a href="#" style="text-decoration: none; color: white;">Home</a></li>
+            <li><a href="#about" style="text-decoration: none; color: white;">About Us</a></li>
+            <li><a href="#" style="text-decoration: none; color: white;">Shop</a></li>
+            <li><a href="#contact" style="text-decoration: none; color: white;">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 style="font-weight: bold;">Information</h5>
+          <ul>
+            <li><a href="#" style="text-decoration: none; color: white;">FAQs</a></li>
+            <li><a href="#" style="text-decoration: none; color: white;">Terms & Conditions</a></li>
+            <li><a href="#" style="text-decoration: none; color: white;">Return Policy</a></li>
+            <li><a href="#" style="text-decoration: none; color: white;">Shipping Information</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 style="font-weight: bold;">Contact Us</h5>
+          <ul>
+            <li><a href="tel:+91 6364473884" style="text-decoration: none; color: white;"><i class="fa fa-phone"></i> Phone</a></li>
+            <li><a href="mailto:tejaskumar40085@gmail.com" style="text-decoration: none; color: white;"><i class="fa fa-envelope"></i> Email</a></li>
+            <li><a href="https://www.facebook.com/" style="text-decoration: none; color: white; margin-left: 5px;"><i class="fa fa-facebook"></i> Facebook</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5 style="font-weight: bold;">Newsletter</h5>
+          <p>Subscribe to our newsletter for latest updates and offers.</p>
+          <form>
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+          </form>
+<a href="https://www.facebook.com/"><i class="fa fa-facebook" style="font-size: 30px; margin-top: 5px; color: white;"></i></a>
+<a href="https://web.whatsapp.com/"><i class="fa fa-whatsapp" style="margin-left: 20px; font-size: 30px; color: white;"></i></a>
+<a href="https://www.instagram.com/"><i class="fa fa-instagram" style="margin-left: 20px; font-size: 30px; color: white;"></i></a>
+<a href="https://twitter.com/i/flow/login"><i class="fa fa-twitter" style="margin-left: 20px; font-size: 30px; color: white;"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container-fluid text-white bg-dark">
+      <p style="font-size: 25px; text-align: center;">&copy; 2024 Your Store Name. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+  <script src="/static/js/script1.js"></script>
+  <script src="/static/js/script3.js"></script>
+  <script>
+    function myFunction() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+    </script>
+    <script>
+      window.onload = function() {
+    document.getElementById("popup").style.display = "block";
+    setTimeout(function() {
+        document.getElementById("popup").style.display = "none";
+    }, 5000);
+};
+
+var closeBtn = document.getElementById("close");
+closeBtn.addEventListener("click", function() {
+    document.getElementById("popup").style.display = "none";
+});
+    </script>
+    <script>
+      document.getElementById('searchForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const query = document.getElementById('searchInput').valu
+        const results = [
+
+        ];
+        displayResults(results);
+      });
+
+      function displayResults(results) {
+        const resultsContainer = document.getElementById('searchResults');
+        resultsContainer.innerHTML = '';
+        results.forEach(function(result) {
+          const resultElement = document.createElement('p');
+          resultElement.textContent = result;
+          resultsContainer.appendChild(resultElement);
+        });
+    }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

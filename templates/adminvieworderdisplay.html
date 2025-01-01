@@ -1,0 +1,43 @@
+{% extends "commonadmin.html" %}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1px solid black" cellpadding="6px" cellspacing="0px" align="center" style="margin-top:60px">
+    <tr>
+       <th>Orderid</th>
+        <th>Product Id</th>
+        <th>User Id</th>
+        <th>Product Type</th>
+        <th>Product Name</th>
+        <th>Product Quantity</th>
+        <th>Product Price</th>
+        <th>Product File</th>
+        <th>Require Quantity</th>
+        <th>Total</th>
+
+    </tr>
+    {% for x in data %}
+    <tr>
+        <td>{{x[0]}}</td>
+         <td>{{x[1]}}</td>
+         <td>{{x[2]}}</td>
+         <td>{{x[3]}}</td>
+         <td>{{x[4]}}</td>
+        <td>{{x[5]}}</td>
+         <td>{{x[6]}}</td>
+         <td>{{x[7]}}</td>
+         <td>{{x[8]}}</td>
+         <td>{{x[9]}}</td>
+
+    </tr>
+    {% endfor %}
+
+</table>
+
+</body>
+</html>
+{% endblock %}
